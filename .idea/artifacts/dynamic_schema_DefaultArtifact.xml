@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="dynamic_schema_DefaultArtifact">
+    <output-path>$PROJECT_DIR$/out/artifacts/dynamic_schema_DefaultArtifact</output-path>
+    <root id="archive" name="default_artifact.jar">
+      <element id="module-output" name="dynamic_schema" />
+    </root>
+  </artifact>
+</component>
