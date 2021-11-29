@@ -277,8 +277,7 @@ object JanioBacknedSchema {
     StructField("pickup_time_from", StringType),
     StructField("pickup_time_to", StringType),
     StructField("order_id", IntegerType),
-    StructField("pickup_notes", StringType),
-
+    StructField("pickup_notes", StringType)
   ))
 
   /**
