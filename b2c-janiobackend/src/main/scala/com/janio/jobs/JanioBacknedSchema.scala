@@ -79,8 +79,6 @@ object JanioBacknedSchema {
 
   ))
 
-  for ()
-
   /**
     * @return Janio_tracker_update table schema
     */
