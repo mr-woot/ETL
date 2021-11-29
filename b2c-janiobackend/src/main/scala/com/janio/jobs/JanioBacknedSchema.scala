@@ -75,7 +75,9 @@ object JanioBacknedSchema {
     StructField("redelivery_forward_order_id",IntegerType),
     StructField("failed_delivery_count",IntegerType),
     StructField("est_early_completion_date",StringType),
-    StructField("order_type",StringType)
+    StructField("order_type",StringType),
+    StructField("special_instruction",StringType),
+    StructField("is_label_less_order",BooleanType)
 
   ))
 
@@ -100,7 +102,8 @@ object JanioBacknedSchema {
     StructField("order_id",IntegerType),
     StructField("partner_data",StringType),
     StructField("partner_id_id",IntegerType),
-    StructField("private_update_id",IntegerType)
+    StructField("private_update_id",IntegerType),
+    StructField("user_id",IntegerType)
   ))
 
 
@@ -140,7 +143,13 @@ object JanioBacknedSchema {
     StructField("acc_manager_name",StringType),
     StructField("can_view_invoices",BooleanType),
     StructField("label_preference",StringType),
-    StructField("default_returns_consolidation_period",StringType)
+    StructField("default_returns_consolidation_period",StringType),
+    StructField("send_notification_email",BooleanType),
+    StructField("send_notification_sms",BooleanType),
+    StructField("hubspot_company_id",StringType),
+    StructField("order_weight_recon_webhook_url",StringType),
+    StructField("label_shipper_address",BooleanType),
+    StructField("is_blocked",BooleanType)
   ))
 
   /**
@@ -161,7 +170,8 @@ object JanioBacknedSchema {
     StructField("detail_text",StringType),
     StructField("main_text",StringType),
     StructField("original_country",StringType),
-    StructField("model_log_link_id",IntegerType)
+    StructField("model_log_link_id",IntegerType),
+    StructField("user_id",IntegerType)
   ))
 
   /**
@@ -224,7 +234,8 @@ object JanioBacknedSchema {
     StructField("pickup_country", StringType),
     StructField("destination_zone_id", IntegerType),
     StructField("origin_zone_id", IntegerType),
-    StructField("order_direction", StringType)
+    StructField("order_direction", StringType),
+    StructField("effective_date", TimestampType)
 
   ))
 
@@ -252,7 +263,8 @@ object JanioBacknedSchema {
     StructField("order_id_id", IntegerType),
     StructField("item_product_id", StringType),
     StructField("item_sku", StringType),
-    StructField("model_log_link_id", IntegerType)
+    StructField("model_log_link_id", IntegerType),
+    StructField("hs_code", StringType)
 
   ))
 
@@ -265,7 +277,8 @@ object JanioBacknedSchema {
     StructField("pickup_time_from", StringType),
     StructField("pickup_time_to", StringType),
     StructField("order_id", IntegerType),
-    StructField("pickup_notes", StringType)
+    StructField("pickup_notes", StringType),
+
   ))
 
   /**
@@ -498,7 +511,9 @@ object JanioBacknedSchema {
     StructField("scan_type_id", IntegerType),
     StructField("created_on", StringType),
     StructField("group_id", StringType),
-    StructField("updated_on", StringType)
+    StructField("updated_on", StringType),
+    StructField("order_fk", StringType),
+    StructField("order_type", StringType)
   ))
 
   /**
@@ -533,7 +548,7 @@ object JanioBacknedSchema {
     StructField("id", IntegerType),
     StructField("group_id", StringType),
     StructField("created_on", StringType),
-    StructField("original_order_id", IntegerType)
+    StructField("hub_id", IntegerType)
   ))
 
   /**
